@@ -8,6 +8,8 @@ Some helpers to run typescript code on docker
   - `Dockerfile`
   - `buildDocker.sh`
   - `pushDocker.sh`
+- Edit the `Dockerfile` to suit your needs
+  - At least check the list of files copied to the docker build process
 - Create a `.env` file in your project root
   - Set `DOCKER_USER_NAME` to your docker hub username
   - Set `DOCKER_REPO_NAME` to your docker project name
