@@ -10,6 +10,7 @@ COPY yarn.lock yarn.lock
 COPY src src
 COPY tsconfig.json tsconfig.json
 COPY tslint.json tslint.json
+COPY .eslintrc .eslintrc
 # TODO Edit the list above to suit your needs
 
 # Install all of the required dependencies, including dev dependencies, inside
