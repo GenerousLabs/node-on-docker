@@ -1,10 +1,11 @@
 #!/bin/bash
 
+source .env
+
 OS=$(uname -s)
-TAG=""
 
 if [ "$OS" = "Darwin" ]; then
-  docker build -t "$TAG" .
+  docker build -t "$DOCKER_REPO_NAME" .
 else
-  sudo docker build -t "$TAG"  .
+  sudo docker build -t "$DOCKER_REPO_NAME"  .
 fi
