@@ -6,10 +6,12 @@ Some helpers to run typescript code on docker
 
 - Copy these files into your project root
   - `Dockerfile`
+  - `.dockerignore`
   - `buildDocker.sh`
   - `pushDocker.sh`
 - Edit the `Dockerfile` to suit your needs
   - At least check the list of files copied to the docker build process
+- Potentially edit `.dockerignore`
 - Create a `.env` file in your project root
   - Set `DOCKER_USER_NAME` to your docker hub username
   - Set `DOCKER_REPO_NAME` to your docker project name
